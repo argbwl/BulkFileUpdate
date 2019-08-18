@@ -19,6 +19,7 @@ public class BankDAOImpl {
 
 	static {
 		if (jt == null) {
+			//creating connection
 			jt = ConnectionUtil.getJdbcTemplate();
 		}
 	}
