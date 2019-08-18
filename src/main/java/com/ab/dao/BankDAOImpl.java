@@ -45,6 +45,7 @@ public class BankDAOImpl {
 				ps.setString(2, bank.getBankName());
 				ps.setString(3, bank.getIfsCode());
 				ps.setInt(4, bank.getEstablishedYear());
+				//Adding batch to PreparedStatement
 				ps.addBatch();
 			}
 			return ps.executeBatch();
